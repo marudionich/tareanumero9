@@ -1,0 +1,231 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*- fondo para el body del index color rgb(214, 231, 228)
+-en el encabezado  color naranja
+-en la nav sacaremos los puntos y usaremos color rgb(128, 206, 160)
+- utilizaremos una imagen jpg
+- fondo de formulario color  rgb(233, 233, 175) y letras color azul
+*/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.inicio{
+    background-color:black;
+}
+header{
+    align-items: center;
+    padding: 10px;
+    background-color: azure;
+}
+.titulo-inicial{
+    padding: 10px;
+    color:orange;
+  font-family: fantasy;
+  text-align: center;
+  transition: 1s scale; 
+  transition: 400ms;
+  transition-property: background-color, color, border;
+}
+.titulo-inicial:hover{
+    scale: 1.2;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px brown;
+}
+
+.nav{
+    display: flex;
+ justify-content: center;
+}
+
+.lista{ 
+    display: flex;
+    gap: 80px;
+   
+}
+.lista li a:hover{
+    background-color: orange;
+    color: aliceblue;
+   
+}
+.lista li a{
+   color:rgb(128, 206, 160);
+   
+}
+.bars{
+    display: none;
+}
+.contenido{
+    padding: 20px;
+    display: grid;
+   
+    text-align: center;
+    color: rgb(60, 192, 148);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagen{
+    
+    width: 300px;
+    height: 300px;
+    filter: opacity(0.8);
+    transition: 1s scale;
+
+    
+}
+.imagen:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.card-conteiner{
+    display: grid;
+    gap: 1em;
+}  
+.card{
+    background-color:rgb(214, 231, 228) ;
+    color: brown;
+    padding: 1em;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.card-title{
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+    color: brown;
+}
+.card-description{
+    font-size: 18px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+    color: brown;
+}
+.foot{
+    display: flex;
+    padding: 10px;
+    margin-top: auto;
+    border: 1px bisque solid;
+   background-color: bisque;
+   height: 50px;
+   justify-content: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: rgb(124, 202, 176);
+
+} 
+
+@media screen and (min-width:320px){
+    .bars{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .contenido{
+        display: block;
+    }
+}
+@media screen and (min-width:769px) {
+    header{
+        background-color: bisque;
+    }
+    
+    
+    .bars{
+        display: none;
+    }
+    .nav{
+        display: flex;
+     justify-content: center;
+    }
+    .lista li a{
+        color:brown;
+    
+}
+.contenido{
+    color: rgba(165, 45, 45, 0.486);
+    background-color: rgb(163, 218, 199);
+
+}
+.card{
+    background-color:goldenrod;
+}
+
+}
+.foot{
+    background-color: rgba(165, 42, 42, 0.432);
+    color:white;
+}
+
+.registro{
+   background-image: url(../matero-auto.jpeg);
+  
+}
+.titulo{
+    padding: 8px;
+    margin: 40px;
+    color:white;
+    font-family: sans-serif;
+    
+    
+}
+.container{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    gap: 5px;
+    
+  }
+  .text-title{
+    margin: 25px;
+    font-style: italic;
+    font-size: large;
+  }
+.acceso{
+    margin: 50px;
+    padding: 60px;
+    border: 1px black solid;
+    width: 300px;
+    height: 400px;
+    background-color: aliceblue;
+    gap: 10px;
+  }
+  .datos{
+    margin: 50px;
+    padding: 60px;
+    border: 1px black solid;
+    width: 300px;
+    height: 400px;
+    background-color: aliceblue;
+    gap: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
